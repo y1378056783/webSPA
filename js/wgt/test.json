@@ -1,0 +1,93 @@
+{
+    "data": {
+        "typearr": [{
+            "id": 0,
+            "name": "全部"
+        }, {
+            "id": "1",
+            "name": "角色"
+        }, {
+            "id": "2",
+            "name": "格斗"
+        }, {
+            "id": "3",
+            "name": "休闲"
+        }, {
+            "id": "4",
+            "name": "竞速"
+        }, {
+            "id": "5",
+            "name": "策略"
+        }, {
+            "id": "6",
+            "name": "射击"
+        }],
+        "page": {
+            "total": 1,
+            "now": 1
+        },
+        "gamelist": [{
+            "typename": "角色",
+            "type": "1",
+            "gameid": "14",
+            "name": "黑暗帝国",
+            "adsize": "",
+            "micon": "http:\/\/img.midoogame.com\/game\/2018\/06\/23\/game_20180623101546_618.png",
+            "adurl": null,
+            "downloads": "0",
+            "publicity": "尽情抒写属于我们的故事吧",
+            "game_from": "2",
+            "link": "http:\/\/h5.guopan.cn\/web\/game.php?appid=116884&channelid=20779"
+        },{
+            "typename": "角色",
+            "type": "1",
+            "gameid": "14",
+            "name": "黑暗帝国",
+            "adsize": "",
+            "micon": "http:\/\/img.midoogame.com\/game\/2018\/06\/23\/game_20180623101546_618.png",
+            "adurl": null,
+            "downloads": "0",
+            "publicity": "尽情抒写属于我们的故事吧",
+            "game_from": "2",
+            "link": "http:\/\/h5.guopan.cn\/web\/game.php?appid=116884&channelid=20779"
+        },{
+            "typename": "角色",
+            "type": "1",
+            "gameid": "14",
+            "name": "黑暗帝国",
+            "adsize": "",
+            "micon": "http:\/\/img.midoogame.com\/game\/2018\/06\/23\/game_20180623101546_618.png",
+            "adurl": null,
+            "downloads": "0",
+            "publicity": "尽情抒写属于我们的故事吧",
+            "game_from": "2",
+            "link": "http:\/\/h5.guopan.cn\/web\/game.php?appid=116884&channelid=20779"
+        },{
+            "typename": "角色",
+            "type": "1",
+            "gameid": "14",
+            "name": "黑暗帝国",
+            "adsize": "",
+            "micon": "http:\/\/img.midoogame.com\/game\/2018\/06\/23\/game_20180623101546_618.png",
+            "adurl": null,
+            "downloads": "0",
+            "publicity": "尽情抒写属于我们的故事吧",
+            "game_from": "2",
+            "link": "http:\/\/h5.guopan.cn\/web\/game.php?appid=116884&channelid=20779"
+        },{
+            "typename": "角色",
+            "type": "1",
+            "gameid": "14",
+            "name": "黑暗帝国",
+            "adsize": "",
+            "micon": "http:\/\/img.midoogame.com\/game\/2018\/06\/23\/game_20180623101546_618.png",
+            "adurl": null,
+            "downloads": "0",
+            "publicity": "尽情抒写属于我们的故事吧",
+            "game_from": "2",
+            "link": "http:\/\/h5.guopan.cn\/web\/game.php?appid=116884&channelid=20779"
+        }]
+    },
+    "sendstatus": "200",
+    "sendmsg": "请求成功"
+}

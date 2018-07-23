@@ -1,0 +1,21 @@
+{{ each resp }}
+<li class="aui-list-item aui-list-item-middle {{ padCls }}">
+    <div class="aui-media-list-item-inner">
+        <div class="aui-list-item-media">
+            <a href="#/detail/{{$value.gameid}}"><img src="{{$value.micon||$value.imgurl}}"  onerror="this.onerror=null;src='./image/grey.png'"></a>
+        </div>
+        <a href="#/detail/{{$value.gameid}}" class="aui-list-item-btn">
+            <div class="aui-list-item-cate-text">
+                <div class="aui-list-item-title aui-font-size-14 aui-ellipsis-1">{{$value.name}}</div>
+            </div>
+            <div class="aui-list-item-cate-text">
+                {{$value.typename}}
+            </div>
+            <div class="aui-list-item-cate-text aui-ellipsis-1">
+               {{$value.publicity}}
+            </div>
+        </a>
+        <a href="javascript:tool.stora({link:'{{$value.link}}',id:'{{$value.gameid}}',name:'{{$value.name}}',imgurl:'{{$value.micon||$value.imgurl}}'})" class="cate-btn {{ catCls }}">开始</a>
+    </div>
+</li>
+{{ /each }}

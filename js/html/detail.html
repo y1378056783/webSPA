@@ -1,0 +1,45 @@
+<div class="aui-content aui-margin-b-10">
+    <ul class="aui-list aui-media-list">
+        <li class="aui-list-item">
+            <div class="aui-media-list-item-inner">
+                <div class="aui-list-item-media">
+                    <img src="{{resp.micon}}">
+                </div>
+                <div class="aui-list-item-inner">
+                    <div class="aui-list-item-text">
+                        <div class="aui-list-item-title">{{resp.name}}</div>
+                    </div>
+                    <div class="aui-list-item-text">{{resp.typename}}</div>
+                    <div class="aui-list-item-text">{{resp.publicity}}</div>
+                </div>
+            </div>
+            
+        </li>
+    </ul>
+</div>
+<div id="img-slide" class="detImg">
+    <div class="aui-slide-wrap" >
+        <div class="aui-slide-node">
+            <div class="aui-row aui-row-padded">
+                {{ each bigimg[0] }}
+            	<div class="aui-col-xs-6"><img src="{{$value}}"></div>
+                {{ /each }}
+            </div>
+        </div>
+        {{ if bigimg[1] }}
+        <div class="aui-slide-node">
+            <div class="aui-row aui-row-padded">
+            	{{ each bigimg[1] }}
+                <div class="aui-col-xs-6"><img src="{{$value}}"></div>
+                {{ /each }}
+            </div>
+        </div>
+        {{/if}}
+    </div>
+    <!--<div class="aui-slide-page-wrap">分页容器</div>-->
+</div>
+<div class="aui-margin-l-15 aui-margin-r-15 det-con">
+	<h3 class="aui-info">游戏简介</h3>
+	{{#resp.description}}
+</div>
+<footer class="f-pf f-w100" id="footer"><a href="javascript:tool.stora({link:'{{resp.link}}',id:'{{resp.gameid}}',name:'{{resp.name}}',imgurl:'{{resp.micon}}'})" class="aui-btn aui-btn-warning aui-btn-block">开始游戏</a</footer>

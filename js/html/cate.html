@@ -1,0 +1,15 @@
+{{ if isNav }}
+<ul class="nav">
+    {{ each cateNav }}
+        <li class="{{$index==0?'active':''}}" data-id="{{$value.id}}">{{$value.name}}</li>
+    {{ /each }}
+</ul>
+{{ /if }}
+<div class="aui-content aui-margin-b-15 f-w100 cateWrap {{ pfxCls }}">
+    <ul class="aui-list aui-media-list {{ isEmpty }}">
+        {{include "./cateChild"}}
+    </ul>
+    {{ if isloading }}
+    <div class="dropload-down aui-invisible"><div class="dropload-load"><span class="loading"></span>加载中...</div></div>
+    {{ /if }}
+</div>

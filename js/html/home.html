@@ -1,0 +1,65 @@
+<section class="aui-grid aui-grid-home">
+    <div class="aui-row">
+        {{ each tlist[0] }}
+            <a href="#/cate/{{ $index==9?0:$value.id}}" class="aui-col-xs-2">
+                <img src="./icon/i{{$index==9?0:$value.id}}.png">
+                <div class="aui-grid-label">{{$index==9?'全部':$value.name}}</div>
+            </a>
+        {{ /each }}
+    </div>
+</section>
+<section class="home-center f-bgw" id="home-main">
+    <!-- banner -->
+    {{ if caro }}
+    <div id="advert-slide">
+        <div class="aui-slide-wrap" >
+            {{ each caro }}
+                <div class="aui-slide-node bg-dark">
+                    <a href="{{ $value.caruoseltype=='game'?'#/detail/'+$value.adurl:$value.adurl }}"><img src="{{$value.imgurl}}" class="f-w100 f-bn"/></a>
+                </div>
+            {{ /each }}
+        </div>
+        <div class="aui-slide-page-wrap"><!--分页容器--></div>
+    </div>
+    {{ /if }}
+    {{ if play }}
+    <h3 class="home-his aui-margin-t-10 aui-margin-b-5">常玩游戏</h3>
+    <div class="aui-row aui-row-padded" id="play-slide">
+        {{ each play }}
+        <a href="{{$value.link}}" class="aui-col-xs-3">
+            <img src="{{$value.imgurl}}">
+            <div class="aui-grid-label aui-ellipsis-1">{{$value.name}}</div>
+        </a>
+        {{ /each }}
+    </div>
+    {{ /if }}
+    <!--<div id="play-slide">
+        <div class="aui-slide-wrap" >
+            <div class="aui-slide-node">
+            </div>
+            <div class="aui-slide-node">
+                <div class="aui-row aui-row-padded">
+                    <div class="aui-col-xs-3">
+                        <img src="./image/rem.jpg">
+                        <div class="aui-grid-label">首页</div>
+                    </div>
+                    <div class="aui-col-xs-3">
+                        <img src="./image/rem.jpg">
+                        <div class="aui-grid-label">设置</div>
+                    </div>
+                    <div class="aui-col-xs-3">
+                        <img src="./image/rem.jpg">
+                        <div class="aui-grid-label">地图</div>
+                    </div>
+                    <div class="aui-col-xs-3">
+                        <img src="./image/rem.jpg">
+                        <div class="aui-grid-label">日历</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><a href="#/home/more" class="f-pa home-new-link aui-font-size-14">更多<i class="aui-iconfont aui-icon-right"></i></a>-->
+    <h3 class="home-new f-fx f-pr"><img src="./icon/h1.png">最热游戏</h3>
+    {{include "./cate"}}
+</section>
+
