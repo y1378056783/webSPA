@@ -4,7 +4,7 @@ define("page/search",function(require, exports, module) {
 		var val=$(this).val().trim();
 		if(val!=''){
 			$.getJSON(U.sea+'?searchname='+val+'&game_from=2&callback=?',function(result){
-				if(!result.data.length){
+				if(result.data.length!=0){
 				 	$main.html(tpl("cate",{catCls:'cate-btn1',resp:result.data.gamelist}))
 				}else{
 

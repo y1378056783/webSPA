@@ -13,7 +13,7 @@ define("page/cate",function(require, exports, module) {
 	function getDataByTypeId(tid){
 		var $wrap=$('.aui-list'),li=null;
 		$.getJSON(U.cate+'?game_from=2&type='+tid+'&callback=?',function(result){
-			if(!result.data.length){
+			if(result.data.length!=0){
 				li=liTpl(result);
 				$wrap.html(li).removeClass('aui-empty');
 			}else{
@@ -47,7 +47,7 @@ define("page/cate",function(require, exports, module) {
 					up:function(dom){//'./js/wgt/test.json?page='+page
 				    	if(lock){
 					    	$.getJSON(U.cate+'?game_from=2&type='+id+'&page='+page+'&callback=?',function(result){
-					    		if(!result.data.length){
+					    		if(result.data.length!=0){
 					    			++page;
 					    			lock=true;
 									li=liTpl(result);
@@ -105,7 +105,7 @@ define("page/cate",function(require, exports, module) {
 				navId=id==9||id==10||id==8?id-1:id;
 				//console.log(navRes)
 				$head.html(tpl("head",{title:'分类'}));
-			if(!result.data.length){
+			if(result.data.length!=0){
 				$main.html(tpl("cate",{catCls:'cate-btn1',isloading:true,cateNav:tlist,isNav:true,pfxCls:'f-pf',resp:result.data.gamelist}));
 				loadMore();
 			}else{
